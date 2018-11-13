@@ -2,7 +2,7 @@
 
 <p><%= @task.details %></p>
 <div>
-<input type="checkbox" id="scales" name="scales"
+<input type="checkbox" id="scales" name="completed"
          <%= @task.completed ? "checked" : "" %>>
 </div>
   <%= link_to 'Destroy', task_path(@task), method: :delete, data: { confirm: "Are you sure?" } %>

@@ -22,6 +22,8 @@ class TasksController < ApplicationController
   end
 
   def update
+    p "quels sont mes params"
+    p params
     task = Task.find(params[:id])
     task.update(task_params)
     task.save
